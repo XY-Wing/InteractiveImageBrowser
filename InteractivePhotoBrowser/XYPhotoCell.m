@@ -20,6 +20,8 @@
 - (void)setupUI
 {
     _imageV = [[UIImageView alloc] init];
+    _imageV.contentMode = UIViewContentModeScaleAspectFill;
+    _imageV.clipsToBounds = YES;
     [self.contentView addSubview:_imageV];
 }
 - (void)layoutSubviews
